@@ -1,5 +1,5 @@
 @import "../omarchy/current/theme/waybar.css";
-@define-color bg #0f0f0f;
+@define-color bg #1f0d02;
 @define-color bg2 alpha(@foreground, 0.1);
 @define-color fg @foreground;
 @define-color ia1 #111111;
