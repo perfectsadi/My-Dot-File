@@ -1,42 +1,44 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "type": "builtin",
-        "height": 10,
-        "width": 10,
-        "padding": {
-            "top": 0,
-            "left": 2
-        }
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "color": { "1": "red", "2": "white" },
+    // "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/png/\" -name \"*.png\"",
+    "source": "$HOME/.config/fastfetch/sfetch.txt",
+    "type": "file",
+    "height": 5,
+    "width": 10,
+    "padding": {
+      "top": 0,
+      "left": 2,
     },
-    "modules": [
-        "break",
-        
-        {
-            "type": "host",
-            "key": "󰌢  PC",
-            "keyColor": "green"
-        },
-        {
-            "type": "cpu",
-            "key": "│ ├󰻠 ",
-            "keyColor": "green"
-        },
-        {
-            "type": "custom",
-            "key": "│ ├󰍹 ",
-            "format":"NVIDIA GeForce RTX 3080",
-            "keyColor": "green"
-        },
-        {
-            "type": "memory",
-            "key": "│ ├󰑭 ",
-            "keyColor": "green"
-        },
-        
-        "break",
-        
-    ]
+  },
+  "modules": [
+    "break",
+
+    {
+      "type": "host",
+      "key": "󰌢  PC",
+      "keyColor": "red",
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├󰻠 ",
+      "keyColor": "red",
+    },
+    {
+      "type": "custom",
+      "key": "│ ├󰍹 ",
+      "format": "NVIDIA GeForce RTX 3080",
+      "keyColor": "red",
+    },
+    {
+      "type": "memory",
+      "key": "│ ├󰑭 ",
+      "keyColor": "red",
+    },
+
+    "break",
+  ],
 }
 // update new config
-// last config change 
+// last config change
